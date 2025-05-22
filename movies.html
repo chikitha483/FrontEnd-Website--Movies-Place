@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies - Movie Place</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="movie-gallery">
+      <div class="movie-card">
+        <img src="Finch.jpeg" alt="Finch">
+        <h3>Finch</h3>
+        <p>Price: $12</p>
+        <button class="buy-btn" onclick="addToCart('Finch', 12)">Add to Cart</button>
+      </div>
+      <div class="movie-card">
+        <img src="JOHNNY ENGLISH.jpg" alt="Johnny English">
+        <h3>Johnny English</h3>
+        <p>Price: $10</p>
+        <button class="buy-btn" onclick="addToCart('Johnny English', 10)">Add to Cart</button>
+      </div>
+      <div class="movie-card">
+        <img src="Joker.jpg" alt="Joker">
+        <h3>Joker</h3>
+        <p>Price: $15</p>
+        <button class="buy-btn" onclick="addToCart('Joker', 15)">Add to Cart</button>
+      </div>
+      <div class="movie-card">
+        <img src="thecore.jpg" alt="The Core">
+        <h3>The Core</h3>
+        <p>Price: $8</p>
+        <button class="buy-btn" onclick="addToCart('The Core', 8)">Add to Cart</button>
+      </div>
+      <div class="movie-card">
+        <img src="Robin Hood.jpg" alt="Robin Hood">
+        <h3>Robin Hood</h3>
+        <p>Price: $10</p>
+        <button class="buy-btn" onclick="addToCart('Robin Hood', 10)">Add to Cart</button>
+      </div>
+      <div class="movie-card">
+        <img src="tenet.jpg" alt="Tenet">
+        <h3>Tenet</h3>
+        <p>Price: $18</p>
+        <button class="buy-btn" onclick="addToCart('Tenet', 18)">Add to Cart</button>
+      </div>
+      <div class="movie-card">
+        <img src="GIJOE.jpg" alt="Snake Eyes">
+        <h3>Snake Eyes</h3>
+        <p>Price: $12</p>
+        <button class="buy-btn" onclick="addToCart('Snake Eyes', 12)">Add to Cart</button>
+      </div>
+    </section>
+    <section id="cart-section">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="total-price">Total Price: $0</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

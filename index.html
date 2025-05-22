@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Movie Place</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Welcome to <span>Movie Place</span></h1>
+      <p>Your one-stop destination for the latest and greatest movies!</p>
+      <button class="cta" onclick="scrollToSection()">Explore Movies</button>
+    </div>
+  </header>
+  <main>
+    <section id="about-movies" class="about-section">
+      <h2>Why MoviePlace?</h2>
+      <p>
+        At Movie Place, we bring the magic of movies right to your fingertips. Whether you're a fan of action-packed blockbusters, heartwarming dramas, or thrilling mysteries, we have something for everyone. 
+        Browse through our handpicked collection of classics and new releases!
+      </p>
+    </section>
+    <section class="featured-movies">
+      <h2>Featured Movies</h2>
+      <div class="featured-gallery">
+        <div class="featured-card">
+          <img src="Joker.jpg" alt="Joker">
+          <h3>Joker</h3>
+          <p>A dark and gripping tale of a man's descent into madness.</p>
+        </div>
+        <div class="featured-card">
+          <img src="Robin Hood.jpg" alt="Robin Hood">
+          <h3>Robin Hood</h3>
+          <p>An adventurous take on a legendary hero.</p>
+        </div>
+        <div class="featured-card">
+          <img src="tenet.jpg" alt="Tenet">
+          <h3>Tenet</h3>
+          <p>A mind-bending sci-fi thriller that will keep you guessing.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    function scrollToSection() {
+      document.getElementById('about-movies').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
